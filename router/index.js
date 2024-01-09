@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { dirname } from 'node:path';
+import { User } from '../controller/user.js';
 
 export const router = Router();
 
-router.get('/', (req, res) => {
-  res.sendFile('view/index.html', {root:dirname('view') } );
-});
+router.get('/', User.home);
+
+router.post('/signin', User.signin);

@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'authentification</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./Js/script.js" defer></script>
 </head>
 <body>
-    <h1>Accueil</h1>
+  <div class="container">
+    <!-- <h1>Authentification</h1> -->
+    <div class="container-form">
+      <div class="field">
+        <h3 class="titre-field">Connexion</h3>
+        <!-- <div class="link">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div> -->
+        <div class="formulaire">
+          <form action="recuperation.js" method="post"></form>
+          <!-- <label for="Email">Adresse mail -->
+            <input type="email" name="Email" placeholder="adresse mail" id="username">
+          <!-- </label> -->
+          <!-- <label for="mot de passe">Mot de passe -->
+            <input type="password" name="mot de passe" placeholder="Mot de passe">
+          <!-- </label> -->
+        </div>
+        <div class="validation">
+          <h4 class="passe">Mot de passe oublié ?</h4>
+          <a href="###"><button class="connexion" type="submit">SE CONNECTER</button></a>
+        </div>
+      </div>
+      <div class="message">
+        <h1 class="titre">Salut, bienvenu sur votre plateforme de gestion des apprenants.</h1>
+        <p class="cta">Enregistrer vous pour rejoindre la plateforme.</p>
+        <a href="#"><button class="enregistrer" type="submit">S'enregistrer</button></a>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
