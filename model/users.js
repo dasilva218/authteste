@@ -7,6 +7,16 @@ const Utilisateur = {
   getUtilisateurs: async () => {
     return await prisma.utilisateur.findMany();
   },
+  //récupération d'un seul utlisateur
+  getOneUtilisateur: async (email) => {
+    if (!email) {
+      throw new Error('Email est requis ');
+    }
+  
+    return await prisma.utilisateur.findUnique({ where: { email } });
+  },
+  
+
 
   // Création d'un nouvel utilisateur
   createUtilisateur: async (data) => {
